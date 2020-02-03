@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_smoothing2"
+            android:foreground="@drawable/rounded"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/img_user_drawable"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background_input"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/img_lock_drawable"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background_input"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:text="Forgot Password?"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_in_background"
+            android:gravity="center"
+            android:hint="Sign in"
+            android:textColorHint="#FFFFFF"
+            android:textAllCaps="false"
+            android:textColor="@drawable/login_textcolor"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:hint="Facebook"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColorHint="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_2_facebook"
+                        android:padding="10dp"
+
+                        android:drawableStart="@drawable/img_3_facebook"
+                        android:drawablePadding="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:hint="Naver"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColorHint="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_2_naver"
+                        android:padding="10dp"
+
+                        android:drawableStart="@drawable/img_3_naver"
+                        android:drawablePadding="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:hint="Google"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColorHint="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_2_google"
+                        android:padding="10dp"
+
+                        android:drawableStart="@drawable/img_3_google"
+                        android:drawablePadding="10dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:hint="Kakao"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColorHint="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_2_kakao"
+                        android:padding="10dp"
+
+                        android:drawableStart="@drawable/img_3_kakao"
+                        android:drawablePadding="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
